@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Product - E-Shop</title>
+    <link rel="stylesheet" href="../style/product/product-create.css">
+</head>
+<body>
+<div class="form-container">
+    <h2>Add New Product</h2>
+    <form id="productForm" method="post">
+        <div class="form-group">
+            <label for="productName">Product Name</label>
+            <input type="text" id="productName" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="productDescription">Description</label>
+            <textarea id="productDescription" name="description" rows="4" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="productPrice">Price</label>
+            <input type="number" id="productPrice" name="price" step="0.01" required>
+        </div>
+        <div class="form-group">
+            <label for="productStatus">Product Status</label>
+            <select id="productStatus" name="productStatus">
+                <option value="available">AVAILABLE</option>
+                <option value="selected">SELECTED</option>
+                <option value="bought">BOUGHT</option>
+                <option value="out_of_stock">OUT_OF_STOCK</option>
+                <!-- Add more categories as needed -->
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="productCategory">Category</label>
+            <select id="productCategory" name="categoryName">
+                <!-- Add more categories as needed -->
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="stockQuantity">Stock Quantity</label>
+            <input type="number" id="stockQuantity" name="stockQuantity" required>
+        </div>
+
+<!--        <div class="form-group">-->
+<!--            <label for="productImage">Product Image</label>-->
+<!--            <input type="file" id="productImage" name="productImage">-->
+<!--        </div>-->
+        <button type="submit">Submit</button>
+    </form>
+    <script src="../javascript/product/product-create.js"></script>
+</div>
+</body>
+</html>

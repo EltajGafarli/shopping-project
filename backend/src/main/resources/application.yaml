@@ -1,0 +1,33 @@
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  datasource:
+    url: jdbc:mysql://localhost:3306/userproject
+    username: root
+    password: 190407011
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate.ddl-auto: update
+    generate-ddl: true
+    show-sql: true
+  security:
+    user:
+      password: password
+      name: user
+
+
+server:
+  port: 8088
+
+admin:
+  email: admin@gmail.com
+
+
+logging:
+  level:
+    com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver: WARN
+    root: info
+    com.com.project.auth: debug
+  file:
+    name: ./logs/shopping.log
+

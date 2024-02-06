@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Register</title>
+    <link rel="stylesheet" href="../style/auth/auth.css">
+</head>
+<body>
+<div class="container">
+    <div class="form-box">
+        <div class="button-box">
+            <div id="btn"></div>
+            <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+            <button type="button" class="toggle-btn" onclick="register()">Register</button>
+        </div>
+        <form id="register" class="input-group" method="post">
+            <input type="text" class="input-field" placeholder="First Name" required name="firstName">
+            <input type="text" class="input-field" placeholder="Last Name" required name="lastName">
+            <input type="email" class="input-field" placeholder="Email" required name="email">
+            <input type="text" class="input-field" placeholder="Phone Number" required name="phoneNumber">
+            <input type="text" class="input-field" placeholder="Address" required name="address">
+            <input type="password" class="input-field" placeholder="Password" required name="password">
+
+            <button type="submit" class="submit-btn">Register</button>
+        </form>
+        <form id="login" class="input-group" method="post">
+            <input type="email" class="input-field" placeholder="Email" required name="email">
+            <input type="password" class="input-field" placeholder="Password" required>
+            <button type="submit" class="submit-btn">Log in</button>
+        </form>
+    </div>
+</div>
+<script src="../javascript/auth/auth.js"></script>
+</body>
+</html>
